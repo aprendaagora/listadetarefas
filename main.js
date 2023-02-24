@@ -35,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
         botaoEditar.classList.add('botao-editar');
         botaoApagar.classList.add('botao-apagar');
 
+        botaoApagar.addEventListener('click', () => {
+            botaoApagar.parentNode.parentNode.remove()
+        })
+
         containerBotoes.append(botaoEditar);
         containerBotoes.append(botaoApagar);
 
@@ -48,6 +52,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // Desativa o botão
         botaoAdicionarItem.disabled = true;
         botaoAdicionarItem.classList.add('desativado');
+    }
+
+    const botoesApagar = document.getElementsByClassName('botao-apagar');
+
+    for (let botao of botoesApagar) {
+        botao.addEventListener('click', () => {
+            botao.parentNode.parentNode.remove()
+        })
     }
 })
 
