@@ -3,18 +3,19 @@
 <head>
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <main>
-        <form action="">
-            <input type="text">
-            <button class="botao-adicionar">+</button>
+        <form>
+            <input id="input-novo-item" type="text">
+            <button disabled class="botao-adicionar desativado">+</button>
         </form>
     
         <ul>
             <li>
                 <input value="Lavar as louças" disabled type="text">
-                <div>
+                <div class="container-botoes">
                     <button class="botao-editar">Editar</button>
                     <button class="botao-apagar">Apagar</button>
                 </div>
