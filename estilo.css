@@ -8,7 +8,6 @@ body {
 main {
     background: white;
     border: 1px solid gray;
-    width: 600px;
     padding: 1em;
     margin: 0 auto;
 }
@@ -53,11 +52,14 @@ button {
    cursor: pointer 
 }
 
+.container-botoes {
+    display: flex;
+}
+
 .botao-adicionar {
     background-color: green;
     font-size: 1.5em;
 }
-
 
 .botao-editar {
     background-color: blue;
@@ -69,3 +71,6 @@ button {
     font-size: 1em;
 }
 
+.desativado {
+    background-color: gray !important;
+}
