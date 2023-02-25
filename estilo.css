@@ -52,9 +52,6 @@ button {
    cursor: pointer 
 }
 
-.container-botoes {
-    display: flex;
-}
 
 .botao-adicionar {
     background-color: green;
@@ -73,4 +70,26 @@ button {
 
 .desativado {
     background-color: gray !important;
+}
+
+.botao-salvar {
+    background-color: green;
+    font-size: 1em;
+}
+
+.botao-cancelar {
+    background: gray;
+    font-size: 1em;
+}
+
+.container-botoes {
+    display: flex;
+}
+
+.container-botoes-edicao {
+    display: flex;
+}
+
+.esconder-botoes {
+    display: none !important;
 }
